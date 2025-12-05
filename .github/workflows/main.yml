@@ -20,6 +20,6 @@ jobs:
       - name: "Build image"
         run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/Abdallahelmadawy-2023040142 .
 
-      - name: push
+      - name: "image push"
         run: docker push ${{ secrets.DOCKERHUB_TOKEN }}/Abdallahelmadawy-2023040142  
         
